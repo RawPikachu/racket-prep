@@ -1,5 +1,7 @@
 # Racket Prep
 
+<img alt="image" src="https://github.com/user-attachments/assets/4982e840-797c-4c12-9df5-d0c908000d05" />
+
 A web-based programming practice platform for learning Racket, especially for University of  Waterloo Students in either first-year CS 135 or CS 145. It has ~60 problems, covering recursion, lists, trees, etc. All code is automatically saved to local storage, so you don't need to worry about closing the browser, or changing problems halfway through. The editor also has most of the features of Dr. Racket proper, including syntax highlighting, bracket matching (when typing), and auto-indentation. It works on mobile, too!
 
 ### Editor Page
