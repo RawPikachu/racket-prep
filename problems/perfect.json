@@ -17,16 +17,16 @@
       "explanation": "A single node tree is perfect"
     },
     {
-      "input": "(perfect? (make-node (make-node empty empty 2) (make-node empty empty 8) 5))",
+      "input": "(perfect? (make-node (make-node empty (make-node empty empty 3) 2) (make-node empty empty 8) 5))",
       "output": "false",
       "explanation": "Tree is not perfect because the leaf nodes are not at the same level"
     }
   ],
-  "starterCode": "(define-struct node (left right key))\n\n(define (perfect? t))\n\n(perfect? empty)\n(perfect? (make-node empty empty 5))\n(perfect? (make-node (make-node empty empty 2) (make-node empty empty 8) 5))",
+  "starterCode": "(define-struct node (left right key))\n\n(define (perfect? t))\n\n(perfect? empty)\n(perfect? (make-node empty empty 5))\n(perfect? (make-node (make-node empty (make-node empty empty 3) 2) (make-node empty empty 8) 5))",
   "hiddenCases": [
     "(check-expect (perfect? empty) true)",
     "(check-expect (perfect? (make-node empty empty 5)) true)",
-    "(check-expect (perfect? (make-node (make-node empty empty 2) (make-node empty empty 8) 5)) false)",
+    "(check-expect (perfect? (make-node (make-node empty (make-node empty empty 3) 2) (make-node empty empty 8) 5)) false)",
     "(check-expect (perfect? (make-node (make-node (make-node empty empty 1) (make-node empty empty 3) 2) (make-node (make-node empty empty 6) (make-node empty empty 8) 7) 5)) true)",
     "(check-expect (perfect? (make-node empty (make-node empty (make-node empty empty 10) 8) 5)) false)",
     "(check-expect (perfect? (make-node (make-node empty empty 2) empty 5)) false)",
