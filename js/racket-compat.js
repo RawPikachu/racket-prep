@@ -104,6 +104,7 @@ var racketCompatCode = `
 ; Boolean operations
 (define true #t)
 (define false #f)
+(define pi 3.141592653589793)
 
 ; Mathematical helpers
 (define (add1 n)
