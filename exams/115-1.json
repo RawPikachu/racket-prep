@@ -526,7 +526,7 @@
             "(check-expect (member? \"Mario\" (all-titles (make-game (make-game empty empty \"Kirby\" 8) (make-game empty empty \"Zelda\" 10) \"Mario\" 9))) true)",
             "(check-expect (member? \"Zelda\" (all-titles (make-game (make-game empty empty \"Kirby\" 8) (make-game empty empty \"Zelda\" 10) \"Mario\" 9))) true)"
           ],
-          "explanation": "Use tree recursion: if the tree is empty, return empty. Otherwise, combine the current title with the titles from the left and right subtrees using `cons` and `append`."
+          "explanation": "Use tree recursion: if the tree is empty, return empty. Otherwise, combine the current title with the titles from the left and right subtrees using `cons` and `append`. A common mistake here might be using append with 3 args instead of 2, which is *not* permitted in Beginning Student with List Abbreviations."
         }
       ]
     }
